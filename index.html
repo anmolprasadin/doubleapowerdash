@@ -1,0 +1,3811 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Double A Power Wash — Professional Pressure Washing NJ</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800;900&family=DM+Sans:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <style>
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+            --blue: #0A66FF;
+            --blue-dim: rgba(10, 102, 255, 0.12);
+            --blue-glow: rgba(10, 102, 255, 0.35);
+            --navy: #0B0F19;
+            --dark: #161B26;
+            --dark2: #1E2433;
+            --mid: #2C3347;
+            --gray: #F5F7FA;
+            --gray2: #E8ECF2;
+            --text-muted: #8B92A5;
+            --text-body: #4A5168;
+            --white: #FFFFFF;
+            --r-card: 24px;
+            --r-btn: 14px;
+            --shadow-card: 0 10px 30px rgba(0, 0, 0, 0.08);
+            --shadow-dark: 0 20px 60px rgba(0, 0, 0, 0.3);
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'DM Sans', sans-serif;
+            background: var(--white);
+            color: var(--navy);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            font-family: 'Manrope', sans-serif;
+            line-height: 1.1;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 0 200px;
+        }
+
+        @media(max-width:900px) {
+            .container {
+                width: 85%;
+                padding: 0 100px;
+            }
+        }
+
+        @media(max-width:600px) {
+            .container {
+                width: 90%;
+                padding: 0 40px;
+            }
+        }
+
+        /* ─── NAV ─── */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+            background: rgba(11, 15, 25, 0.5);
+            backdrop-filter: blur(30px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 32px rgba(31, 38, 135, 0.2);
+        }
+
+        nav.scrolled {
+            background: rgba(11, 15, 25, 0.7);
+            box-shadow: 0 8px 32px rgba(31, 38, 135, 0.3);
+        }
+
+        .nav-inner {
+            width: 80%;
+            margin: 0 auto;
+            padding: 0 200px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 72px;
+        }
+
+        @media(max-width:900px) {
+            .nav-inner {
+                width: 85%;
+                padding: 0 100px;
+            }
+        }
+
+        @media(max-width:600px) {
+            .nav-inner {
+                width: 90%;
+                padding: 0 40px;
+            }
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-family: 'Manrope', sans-serif;
+            font-weight: 800;
+            font-size: 1.2rem;
+            color: var(--white);
+            text-decoration: none;
+            letter-spacing: -0.02em;
+            transition: transform 0.3s ease;
+        }
+
+        .logo:hover {
+            transform: scale(1.05);
+        }
+
+        .logo-icon {
+            width: 38px;
+            height: 38px;
+            border-radius: 10px;
+            background: linear-gradient(135deg, #0A66FF, #0044CC);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 0 20px rgba(10, 102, 255, 0.5);
+            animation: logoFloat 3s ease-in-out infinite;
+        }
+
+        @keyframes logoFloat {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-3px);
+            }
+        }
+
+        .logo-icon svg {
+            width: 20px;
+            height: 20px;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 36px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            font-size: 0.88rem;
+            font-weight: 500;
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+            transition: all 0.3s;
+            letter-spacing: 0.01em;
+            position: relative;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--blue);
+            transition: width 0.3s ease;
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .nav-links a:hover {
+            color: var(--white);
+        }
+
+        .nav-cta {
+            background: var(--blue);
+            color: var(--white);
+            border: none;
+            border-radius: var(--r-btn);
+            padding: 11px 22px;
+            font-family: 'Manrope', sans-serif;
+            font-weight: 700;
+            font-size: 0.88rem;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.25s;
+            box-shadow: 0 4px 20px rgba(10, 102, 255, 0.4);
+            letter-spacing: 0.01em;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .nav-cta::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.2);
+            transform: translate(-50%, -50%);
+            transition: width 0.6s, height 0.6s;
+        }
+
+        .nav-cta:hover::before {
+            width: 300px;
+            height: 300px;
+        }
+
+        .nav-cta:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 6px 28px rgba(10, 102, 255, 0.55);
+        }
+
+        @media(max-width:768px) {
+            .nav-links {
+                display: none;
+            }
+        }
+
+        /* ─── HERO ─── */
+        .hero {
+            min-height: 100vh;
+            background: var(--navy);
+            position: relative;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+            padding-top: 72px;
+        }
+
+        .hero-bg {
+            position: absolute;
+            inset: 0;
+            z-index: 0;
+            background:
+                radial-gradient(ellipse 70% 60% at 65% 50%, rgba(10, 102, 255, 0.18) 0%, transparent 70%),
+                radial-gradient(ellipse 40% 50% at 20% 80%, rgba(10, 102, 255, 0.08) 0%, transparent 60%),
+                radial-gradient(ellipse 60% 40% at 80% 10%, rgba(10, 60, 180, 0.12) 0%, transparent 60%);
+        }
+
+        /* Animated water ripple circles */
+        .hero-rings {
+            position: absolute;
+            right: -200px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 900px;
+            height: 900px;
+            z-index: 0;
+            opacity: 0.08;
+        }
+
+        .ring {
+            position: absolute;
+            border-radius: 50%;
+            border: 1px solid var(--blue);
+            animation: ringPulse 4s ease-in-out infinite;
+        }
+
+        .ring:nth-child(1) {
+            width: 200px;
+            height: 200px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .ring:nth-child(2) {
+            width: 380px;
+            height: 380px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            animation-delay: 0.6s;
+        }
+
+        .ring:nth-child(3) {
+            width: 560px;
+            height: 560px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            animation-delay: 1.2s;
+        }
+
+        .ring:nth-child(4) {
+            width: 740px;
+            height: 740px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            animation-delay: 1.8s;
+        }
+
+        .ring:nth-child(5) {
+            width: 900px;
+            height: 900px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            animation-delay: 2.4s;
+        }
+
+        @keyframes ringPulse {
+
+            0%,
+            100% {
+                opacity: 0.4;
+                transform: translate(-50%, -50%) scale(1);
+            }
+
+            50% {
+                opacity: 1;
+                transform: translate(-50%, -50%) scale(1.02);
+            }
+        }
+
+        /* Grid lines */
+        .hero-grid {
+            position: absolute;
+            inset: 0;
+            z-index: 0;
+            opacity: 0.04;
+            background-image:
+                linear-gradient(rgba(255, 255, 255, 1) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255, 255, 255, 1) 1px, transparent 1px);
+            background-size: 60px 60px;
+            animation: gridMove 20s linear infinite;
+        }
+
+        @keyframes gridMove {
+            0% {
+                background-position: 0 0;
+            }
+
+            100% {
+                background-position: 60px 60px;
+            }
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            width: 100%;
+        }
+
+        .hero-inner {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            align-items: center;
+        }
+
+        @media(max-width:900px) {
+            .hero-inner {
+                grid-template-columns: 1fr;
+                gap: 48px;
+            }
+
+            .hero-visual {
+                display: none;
+            }
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(10, 102, 255, 0.15);
+            border: 1px solid rgba(10, 102, 255, 0.3);
+            border-radius: 100px;
+            padding: 7px 16px;
+            margin-bottom: 28px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: #6FA8FF;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+        }
+
+        .badge-dot {
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background: #0A66FF;
+            animation: blink 2s ease-in-out infinite;
+        }
+
+        @keyframes blink {
+
+            0%,
+            100% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0.3;
+            }
+        }
+
+        .hero-title {
+            font-size: clamp(2.8rem, 5.5vw, 5rem);
+            font-weight: 900;
+            color: var(--white);
+            line-height: 1.05;
+            letter-spacing: -0.03em;
+            margin-bottom: 24px;
+        }
+
+        .hero-title span {
+            color: var(--blue);
+            background: linear-gradient(135deg, #0A66FF, #00D4FF);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-title .line2 {
+            background: linear-gradient(90deg, #fff, rgba(255, 255, 255, 0.6));
+        
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero-subtitle {
+            font-size: 1.1rem;
+            color: rgba(255, 255, 255, 1);
+            line-height: 1.7;
+            max-width: 480px;
+            margin-bottom: 40px;
+            font-weight: 400;
+        }
+
+        .hero-ctas {
+            display: flex;
+            gap: 14px;
+            flex-wrap: wrap;
+            margin-bottom: 56px;
+        }
+
+        .btn-primary {
+            background: var(--blue);
+            color: #fff;
+            border: none;
+            border-radius: var(--r-btn);
+            padding: 15px 30px;
+            font-family: 'Manrope', sans-serif;
+            font-weight: 700;
+            font-size: 0.95rem;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.25s;
+            box-shadow: 0 6px 30px rgba(10, 102, 255, 0.45);
+            letter-spacing: 0.01em;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn-primary::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+            transition: left 0.5s;
+        }
+
+        .btn-primary:hover::before {
+            left: 100%;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px) scale(1.02);
+            box-shadow: 0 10px 40px rgba(10, 102, 255, 0.6);
+        }
+
+        .btn-primary svg {
+            width: 16px;
+            height: 16px;
+        }
+
+        .btn-outline {
+            background: rgba(255, 255, 255, 0.1);
+            color: #ffffff;
+            border: 1px solid rgba(255, 255, 255, 0.8);
+            border-radius: var(--r-btn);
+            padding: 15px 30px;
+            font-family: 'Manrope', sans-serif;
+            font-weight: 600;
+            font-size: 0.95rem;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.25s;
+            backdrop-filter: blur(8px);
+            letter-spacing: 0.01em;
+        }
+
+        .btn-outline:hover {
+            background: rgba(255, 255, 255, 1);
+            color: #1341da;
+            border-color: rgba(255, 255, 255, 0.8);
+           
+            transform: translateY(-2px);
+          
+        }
+
+        .hero-stats {
+            display: flex;
+            gap: 0;
+            flex-wrap: wrap;
+            background: rgb(255, 255, 255);
+            border: 1px solid rgba(12, 35, 236, 0.08);
+            border-radius: 20px;
+            padding: 0;
+            overflow: hidden;
+            backdrop-filter: blur(10px);
+            width: fit-content;
+        }
+
+        .stat-item {
+            padding: 20px 28px;
+            text-align: center;
+            border-right: 1px solid rgba(255, 255, 255, 0.07);
+            transition: all 0.3s ease;
+        }
+
+        .stat-item:hover {
+            background: rgba(10, 102, 255, 0.1);
+            transform: scale(1.05);
+        }
+
+        .stat-item:last-child {
+            border-right: none;
+        }
+
+        .stat-num {
+            font-family: 'Manrope', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 800;
+          color: #0B0F19;
+            line-height: 1;
+            display: block;
+            margin-bottom: 4px;
+        }
+
+        .stat-num span {
+            color: var(--blue);
+        }
+
+        .stat-label {
+            font-size: 0.75rem;
+            color: rgb(0, 0, 0);
+            font-weight: 500;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+        }
+
+        /* Hero visual right side */
+        .hero-visual {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 560px;
+        }
+
+        .hero-img-card {
+            width: 100%;
+            height: 100%;
+            border-radius: 28px;
+            background: linear-gradient(135deg, var(--dark2) 0%, var(--mid) 100%);
+            background-image: url('hero-bg.png');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 30px 80px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.06);
+            transition: transform 0.3s ease;
+        }
+
+        .hero-img-card:hover {
+            transform: scale(1.02);
+        }
+
+        /* Simulated pressure wash visual */
+        .wash-visual {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Half-cleaned effect */
+        .wash-half-dirty {
+            position: absolute;
+            inset: 0;
+            background: transparent;
+        }
+
+        .wash-half-clean {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 55%;
+            background: transparent;
+            border-left: 3px solid rgba(10, 102, 255, 0.8);
+            box-shadow: -10px 0 40px rgba(10, 102, 255, 0.3);
+            animation: slideClean 2s ease-in-out infinite alternate;
+        }
+
+        @keyframes slideClean {
+            0% {
+                left: 55%;
+            }
+
+            100% {
+                left: 50%;
+            }
+        }
+
+        /* Water stream */
+        .water-stream {
+            position: absolute;
+            left: 52%;
+            top: 20%;
+            bottom: 20%;
+            width: 6px;
+            border-radius: 10px;
+            background: linear-gradient(180deg, transparent, rgba(10, 102, 255, 0.9), rgba(150, 200, 255, 0.9), transparent);
+            filter: blur(1px);
+            animation: streamFlow 2s ease-in-out infinite;
+        }
+
+        @keyframes streamFlow {
+
+            0%,
+            100% {
+                opacity: 0.7;
+                transform: scaleX(1);
+            }
+
+            50% {
+                opacity: 1;
+                transform: scaleX(1.5);
+            }
+        }
+
+        .water-drops {
+            position: absolute;
+            left: 50%;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            overflow: hidden;
+        }
+
+        .drop {
+            position: absolute;
+            width: 3px;
+            height: 3px;
+            border-radius: 50%;
+            background: rgba(150, 200, 255, 0.8);
+            animation: dropFall 1.5s ease-in infinite;
+        }
+
+        .drop:nth-child(1) {
+            left: 20%;
+            top: -5%;
+            animation-delay: 0s;
+        }
+
+        .drop:nth-child(2) {
+            left: 40%;
+            top: -5%;
+            animation-delay: 0.3s;
+        }
+
+        .drop:nth-child(3) {
+            left: 60%;
+            top: -5%;
+            animation-delay: 0.6s;
+        }
+
+        .drop:nth-child(4) {
+            left: 80%;
+            top: -5%;
+            animation-delay: 0.9s;
+        }
+
+        .drop:nth-child(5) {
+            left: 15%;
+            top: -5%;
+            animation-delay: 1.2s;
+        }
+
+        @keyframes dropFall {
+            0% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+
+            100% {
+                opacity: 0;
+                transform: translateY(600px);
+            }
+        }
+
+        .wash-label {
+            position: absolute;
+            padding: 8px 16px;
+            border-radius: 8px;
+            font-family: 'Manrope', sans-serif;
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+        }
+
+        .label-before {
+            top: 24px;
+            left: 24px;
+            background: var(--blue);
+            color: var(--white);
+            border: 1px solid var(--blue);
+        }
+
+        .label-after {
+            top: 24px;
+            right: 24px;
+            background: var(--blue);
+            color: var(--white);
+            border: 1px solid var(--blue);
+        }
+
+        /* Floating info cards */
+        .float-card {
+            position: absolute;
+            border-radius: 16px;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            padding: 14px 18px;
+            box-shadow: 0 16px 40px rgba(0, 0, 0, 0.4);
+            animation: floatUpDown 3s ease-in-out infinite;
+        }
+
+        @keyframes floatUpDown {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        .fc1 {
+            bottom: 40px;
+            left: -28px;
+            animation-delay: 0s;
+        }
+
+        .fc2 {
+            top: 60px;
+            right: -28px;
+            animation-delay: 1.5s;
+        }
+
+        .float-card-inner {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .fc-icon {
+            width: 36px;
+            height: 36px;
+            border-radius: 10px;
+            background: var(--blue-dim);
+            border: 1px solid rgba(10, 102, 255, 0.3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .fc-icon svg {
+            width: 17px;
+            height: 17px;
+            stroke: var(--blue);
+        }
+
+        .fc-text-label {
+            font-size: 0.7rem;
+            color: var(--text-muted);
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.03em;
+        }
+
+        .fc-text-val {
+            font-family: 'Manrope', sans-serif;
+            font-size: 0.95rem;
+            font-weight: 800;
+            color: var(--navy);
+        }
+
+        .nozzle-icon {
+            position: absolute;
+            right: 56%;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #0A66FF, #0044CC);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 0 30px rgba(10, 102, 255, 0.6), 0 0 60px rgba(10, 102, 255, 0.3);
+            animation: nozzlePulse 2s ease-in-out infinite;
+        }
+
+        @keyframes nozzlePulse {
+
+            0%,
+            100% {
+                box-shadow: 0 0 30px rgba(10, 102, 255, 0.6), 0 0 60px rgba(10, 102, 255, 0.3);
+            }
+
+            50% {
+                box-shadow: 0 0 40px rgba(10, 102, 255, 0.9), 0 0 80px rgba(10, 102, 255, 0.5);
+            }
+        }
+
+        .nozzle-icon svg {
+            width: 24px;
+            height: 24px;
+        }
+
+        /* ─── TRUST BAR ─── */
+        .trust-bar {
+            background: var(--gray);
+            border-top: 1px solid var(--gray2);
+            border-bottom: 1px solid var(--gray2);
+            padding: 60px 0;
+        }
+
+        .trust-inner {
+            width: 80%;
+            margin: 0 auto;
+            padding: 0 200px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 40px;
+            align-items: center;
+            justify-items: center;
+        }
+
+        @media(max-width:900px) {
+            .trust-inner {
+                width: 85%;
+                padding: 0 100px;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 30px;
+            }
+        }
+
+        @media(max-width:600px) {
+            .trust-inner {
+                width: 90%;
+                padding: 0 40px;
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+        }
+
+        .trust-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 0;
+            border-right: none;
+            font-size: 0.88rem;
+            font-weight: 600;
+            color: var(--text-body);
+            transition: all 0.3s ease;
+            gap: 12px;
+            text-align: center;
+        }
+
+        .trust-item:hover {
+            transform: translateY(-2px);
+            color: var(--navy);
+        }
+
+        .trust-item:last-child {
+            border-right: none;
+        }
+
+        .trust-icon {
+            width: 100px;
+            height: 100px;
+            border-radius: 10px;
+            background: var(--blue-dim);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+
+        .trust-icon img {
+            width: 70px;
+            height: 70px;
+            object-fit: contain;
+        }
+
+        .trust-item:hover .trust-icon {
+            background: var(--blue-dim);
+            transform: translateY(-4px) scale(1.05);
+            box-shadow: 0 8px 20px rgba(10, 102, 255, 0.15);
+        }
+
+        @media(max-width:900px) {
+            .trust-icon {
+                width: 60px;
+                height: 60px;
+            }
+
+            .trust-icon img {
+                width: 40px;
+                height: 40px;
+            }
+        }
+
+        @media(max-width:600px) {
+            .trust-icon {
+                width: 48px;
+                height: 48px;
+            }
+
+            .trust-icon img {
+                width: 32px;
+                height: 32px;
+            }
+        }
+
+        /* ─── SCROLL REVEAL ─── */
+        .scroll-reveal {
+            opacity: 0;
+            transform: translateY(50px);
+            transition: all 0.8s ease;
+        }
+
+        .scroll-reveal.revealed {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* ─── SECTION HEADERS ─── */
+        .section-eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: var(--blue);
+            margin-bottom: 16px;
+        }
+
+        .section-eyebrow::before {
+            content: '';
+            display: block;
+            width: 20px;
+            height: 2px;
+            background: var(--blue);
+            border-radius: 2px;
+        }
+
+        .section-title {
+            font-size: clamp(2rem, 3.5vw, 3rem);
+            font-weight: 900;
+            color: var(--navy);
+            line-height: 1.08;
+            letter-spacing: -0.025em;
+            margin-bottom: 16px;
+        }
+
+        .section-title.light {
+            color: var(--white);
+        }
+
+        .section-sub {
+            font-size: 1.05rem;
+            color: var(--white);
+            line-height: 1.7;
+            max-width: 560px;
+        }
+
+        .section-sub.light {
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        /* ─── SERVICES ─── */
+        .services {
+            padding: 120px 0;
+            background: var(--white);
+        }
+
+        .services .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 0 200px;
+        }
+
+        @media(max-width:900px) {
+            .services .container {
+                width: 85%;
+                padding: 0 100px;
+            }
+        }
+
+        @media(max-width:600px) {
+            .services .container {
+                width: 90%;
+                padding: 0 40px;
+            }
+        }
+
+        .services-header {
+            text-align: center;
+            margin-bottom: 64px;
+        }
+
+        .services-header .section-sub {
+            margin: 0 auto;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 28px;
+            width: 100%;
+        }
+
+        @media(max-width:900px) {
+            .services-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media(max-width:560px) {
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .service-card {
+            background: var(--white);
+            border: 1px solid var(--gray2);
+            border-radius: 16px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.05);
+        }
+
+        .service-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 16px 40px rgba(10, 102, 255, 0.12);
+            border-color: rgba(10, 102, 255, 0.2);
+        }
+
+        .svc-img-wrap {
+            width: 100%;
+            aspect-ratio: 4 / 3;
+            overflow: hidden;
+            background: #E8ECF2;
+        }
+
+        .svc-img-placeholder {
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, #d0d8e8 0%, #b8c4d8 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .svc-img-wrap img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.4s ease;
+        }
+
+        .service-card:hover .svc-img-wrap img,
+        .service-card:hover .svc-img-placeholder {
+            transform: scale(1.05);
+        }
+
+        .svc-body {
+            padding: 24px;
+        }
+
+        .svc-title {
+            font-family: 'Manrope', sans-serif;
+            font-size: 1.1rem;
+            font-weight: 800;
+            color: var(--navy);
+            margin-bottom: 10px;
+        }
+
+        .svc-desc {
+            font-size: 0.88rem;
+            color: var(--text-body);
+            line-height: 1.65;
+            margin-bottom: 16px;
+        }
+
+        .svc-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 0.82rem;
+            font-weight: 700;
+            color: var(--blue);
+            text-decoration: none;
+            letter-spacing: 0.02em;
+            text-transform: uppercase;
+            transition: gap 0.2s ease;
+        }
+
+        .svc-link:hover {
+            gap: 10px;
+        }
+
+        .svc-link svg {
+            width: 14px;
+            height: 14px;
+        }
+
+        .services-header {
+            text-align: center;
+            margin-bottom: 64px;
+        }
+
+        .services-header .section-sub {
+            margin: 0 auto;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+            width: 100%;
+        }
+
+        @media(max-width:900px) {
+            .services-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media(max-width:560px) {
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .service-card {
+            background: var(--gray);
+            border: 1px solid var(--gray2);
+            border-radius: var(--r-card);
+            padding: 32px;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-card::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, rgba(10, 102, 255, 0.05), transparent);
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .service-card:hover {
+            border-color: rgba(10, 102, 255, 0.25);
+            box-shadow: 0 20px 50px rgba(10, 102, 255, 0.15), 0 4px 16px rgba(0, 0, 0, 0.05);
+            transform: translateY(-8px) scale(1.02);
+        }
+
+        .service-card:hover::before {
+            opacity: 1;
+        }
+
+        .svc-icon {
+            width: 52px;
+            height: 52px;
+            border-radius: 14px;
+            background: var(--blue-dim);
+            border: 1px solid rgba(10, 102, 255, 0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 24px;
+            transition: all 0.4s;
+        }
+
+        .service-card:hover .svc-icon {
+            background: var(--blue);
+            border-color: var(--blue);
+            box-shadow: 0 8px 24px rgba(10, 102, 255, 0.4);
+            transform: rotate(360deg) scale(1.1);
+        }
+
+        .svc-icon svg {
+            width: 22px;
+            height: 22px;
+            stroke: #0A66FF;
+            transition: stroke 0.3s;
+        }
+
+        .service-card:hover .svc-icon svg {
+            stroke: #fff;
+        }
+
+        .svc-title {
+            font-family: 'Manrope', sans-serif;
+            font-size: 1.1rem;
+            font-weight: 800;
+            color: var(--navy);
+            margin-bottom: 10px;
+            letter-spacing: -0.01em;
+        }
+
+        .svc-desc {
+            font-size: 0.88rem;
+            color: var(--text-body);
+            line-height: 1.65;
+        }
+
+        .svc-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            margin-top: 20px;
+            font-size: 0.82rem;
+            font-weight: 700;
+            color: var(--blue);
+            text-decoration: none;
+            letter-spacing: 0.02em;
+            text-transform: uppercase;
+            transition: gap 0.2s;
+        }
+
+        .svc-link:hover {
+            gap: 10px;
+        }
+
+        .svc-link svg {
+            width: 14px;
+            height: 14px;
+            transition: transform 0.3s;
+        }
+
+        .svc-link:hover svg {
+            transform: translateX(3px);
+        }
+
+        /* ─── BEFORE & AFTER ─── */
+        .before-after {
+            padding: 120px 0;
+            background: var(--navy);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .ba-bg {
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(ellipse 80% 60% at 50% 100%, rgba(10, 102, 255, 0.12), transparent 70%);
+        }
+
+        .ba-header {
+            text-align: center;
+            margin-bottom: 64px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .ba-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+            position: relative;
+            z-index: 2;
+        }
+
+        @media(max-width:900px) {
+            .ba-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .ba-card {
+            border-radius: var(--r-card);
+            overflow: hidden;
+            position: relative;
+            box-shadow: var(--shadow-dark);
+            border: 1px solid rgba(255, 255, 255, 0.07);
+            transition: all 0.4s ease;
+        }
+
+        .ba-card:hover {
+            transform: translateY(-8px) scale(1.02);
+            box-shadow: 0 30px 80px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Image container for before/after */
+        .ba-visual {
+            height: 280px;
+            position: relative;
+            display: flex;
+            background: #1a1a1a;
+        }
+
+        /* Actual image implementation */
+        .ba-img-container {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .ba-video-container {
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            position: relative;
+            overflow: hidden;
+            background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .ba-video-placeholder {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            color: rgba(255, 255, 255, 0.8);
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .ba-card:hover .ba-video-placeholder {
+            color: rgba(255, 255, 255, 1);
+        }
+
+        .ba-card:hover .ba-video-container {
+            background: linear-gradient(135deg, #2a2a2a 0%, #3a3a3a 100%);
+        }
+
+        .ba-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.4s ease;
+        }
+
+        .ba-card:hover .ba-img {
+            transform: scale(1.05);
+        }
+
+        /* Slider overlay */
+        .ba-slider-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+
+        .ba-divider {
+            position: absolute;
+            left: 50%;
+            top: 0;
+            bottom: 0;
+            width: 3px;
+            z-index: 5;
+            background: linear-gradient(180deg, transparent, var(--blue), rgba(10, 102, 255, 0.6), var(--blue), transparent);
+            box-shadow: 0 0 20px rgba(10, 102, 255, 0.8);
+            animation: slideBar 3s ease-in-out infinite;
+        }
+
+        @keyframes slideBar {
+
+            0%,
+            100% {
+                left: 50%;
+            }
+
+            50% {
+                left: 55%;
+            }
+        }
+
+        .ba-pill {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background: var(--blue);
+            z-index: 6;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 0 20px rgba(10, 102, 255, 0.7);
+            animation: pillPulse 2s ease-in-out infinite;
+        }
+
+        @keyframes pillPulse {
+
+            0%,
+            100% {
+                transform: translate(-50%, -50%) scale(1);
+                box-shadow: 0 0 20px rgba(10, 102, 255, 0.7);
+            }
+
+            50% {
+                transform: translate(-50%, -50%) scale(1.1);
+                box-shadow: 0 0 30px rgba(10, 102, 255, 1);
+            }
+        }
+
+        .ba-pill svg {
+            width: 14px;
+            height: 14px;
+        }
+
+        .ba-tag {
+            position: absolute;
+            bottom: 12px;
+            padding: 6px 12px;
+            border-radius: 8px;
+            font-size: 0.7rem;
+            font-weight: 800;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            z-index: 3;
+            font-family: 'Manrope', sans-serif;
+        }
+
+        .tag-before {
+            left: 12px;
+            background: rgba(0, 0, 0, 0.7);
+            color: rgba(255, 255, 255, 0.9);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .tag-after {
+            right: 12px;
+            background: rgba(10, 102, 255, 0.4);
+            color: #fff;
+            border: 1px solid rgba(10, 102, 255, 0.6);
+        }
+
+        .ba-info {
+            background: var(--dark);
+            padding: 20px 24px;
+            transition: background 0.3s ease;
+        }
+
+        .ba-card:hover .ba-info {
+            background: linear-gradient(135deg, var(--dark), var(--dark2));
+        }
+
+        .ba-surface {
+            font-family: 'Manrope', sans-serif;
+            font-size: 1rem;
+            font-weight: 800;
+            color: var(--white);
+            margin-bottom: 4px;
+        }
+
+        .ba-detail {
+            font-size: 0.82rem;
+            color: rgba(255, 255, 255, 0.4);
+        }
+
+        /* Placeholder for images */
+        .ba-placeholder {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #1a1a1a, #2a2a2a);
+            color: rgba(255, 255, 255, 0.3);
+            font-family: 'Manrope', sans-serif;
+            font-size: 0.9rem;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* ─── WHY CHOOSE US ─── */
+        .why {
+            padding: 120px 0;
+            background: var(--white);
+        }
+
+        .why-header {
+            margin-bottom: 48px;
+        }
+
+        .why-header .section-title {
+            color: var(--navy);
+            font-size: clamp(1.8rem, 3vw, 2.6rem);
+        }
+
+        .why-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: auto auto;
+            gap: 20px;
+        }
+
+        /* 3rd card spans 2 rows on the right */
+        .why-feat:nth-child(3) {
+            grid-column: 3;
+            grid-row: 1 / 3;
+            min-height: 400px;
+        }
+
+        /* 4th and 5th cards go back to columns 1 and 2 */
+        .why-feat:nth-child(4) {
+            grid-column: 1;
+            grid-row: 2;
+        }
+
+        .why-feat:nth-child(5) {
+            grid-column: 2;
+            grid-row: 2;
+        }
+
+        @media(max-width:900px) {
+            .why-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+            .why-feat:nth-child(3),
+            .why-feat:nth-child(4),
+            .why-feat:nth-child(5) {
+                grid-column: auto;
+                grid-row: auto;
+                min-height: auto;
+            }
+        }
+
+        @media(max-width:560px) {
+            .why-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .why-feat {
+            background: #F5F7FA;
+            border: 1px solid #E8ECF2;
+            border-radius: 16px;
+            padding: 32px;
+            transition: all 0.3s ease;
+        }
+
+        .why-feat:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+        }
+
+        .why-feat-highlight {
+            background: linear-gradient(160deg, #0A3080 0%, #0A66FF 100%);
+            border: none;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .why-feat-highlight:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 50px rgba(10, 102, 255, 0.4);
+        }
+
+        .why-feat-highlight .wf-title {
+           
+            font-size: 1.3rem;
+        }
+
+        .why-feat-highlight .wf-desc {
+            color: rgba(0, 0, 0, 0.85);
+        }
+
+        .why-feat-highlight .wf-icon {
+            
+   
+        }
+
+       
+
+        .why-cta-btn {
+            display: inline-block;
+            margin-top: auto;
+            padding-top: 32px;
+            background: #0A66FF;
+            color: #fff;
+            font-family: 'Manrope', sans-serif;
+            font-weight: 700;
+            font-size: 0.95rem;
+            text-decoration: none;
+            padding: 14px 28px;
+            border-radius: 12px;
+            border: 2px solid rgba(255,255,255,0.3);
+            margin-top: 32px;
+            width: fit-content;
+            transition: all 0.25s ease;
+        }
+
+        .why-cta-btn:hover {
+            background: #fff;
+            color: #0A66FF;
+        }
+
+        .wf-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 12px;
+            background: rgba(10, 102, 255, 0.1);
+            border: 1px solid rgba(10, 102, 255, 0.15);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .wf-icon svg {
+            width: 22px;
+            height: 22px;
+            stroke: var(--blue);
+        }
+
+        .wf-title {
+            font-family: 'Manrope', sans-serif;
+            font-size: 1.05rem;
+            font-weight: 800;
+            color: #000000;
+            margin-bottom: 10px;
+        }
+
+        .wf-desc {
+            font-size: 0.9rem;
+            color: #333333;
+            line-height: 1.65;
+        }
+
+        .stars svg:nth-child(5) {
+            animation-delay: 0.8s;
+        }
+
+        @keyframes starPulse {
+
+            0%,
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+
+            50% {
+                transform: scale(1.2);
+                opacity: 0.8;
+            }
+        }
+
+        .rating-num {
+            font-family: 'Manrope', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 900;
+            color: #fff;
+            letter-spacing: -0.03em;
+        }
+
+        .rating-label {
+            font-size: 0.85rem;
+            color: rgba(255, 255, 255, 0.4);
+        }
+
+        .why-bg-glow {
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(ellipse at center, rgba(10, 102, 255, 0.15), transparent 70%);
+            animation: glowPulse 3s ease-in-out infinite;
+        }
+
+        @keyframes glowPulse {
+
+            0%,
+            100% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0.7;
+            }
+        }
+
+        .why-features {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        @media(max-width:560px) {
+            .why-features {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .why-feat {
+            background: var(--white);
+            border: 1px solid var(--gray2);
+            border-radius: 20px;
+            padding: 24px;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            box-shadow: var(--shadow-card);
+        }
+
+        .why-feat:hover {
+            border-color: rgba(10, 102, 255, 0.25);
+            transform: translateY(-4px) scale(1.02);
+            box-shadow: 0 20px 40px rgba(10, 102, 255, 0.15);
+        }
+
+        .wf-icon {
+            width: 44px;
+            height: 44px;
+            border-radius: 12px;
+            background: var(--blue-dim);
+            border: 1px solid rgba(10, 102, 255, 0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 16px;
+            transition: all 0.3s ease;
+        }
+
+        .why-feat:hover .wf-icon {
+            transform: rotate(360deg) scale(1.1);
+            background: var(--blue);
+        }
+
+        .wf-icon svg {
+            width: 20px;
+            height: 20px;
+            stroke: #0A66FF;
+            transition: stroke 0.3s;
+        }
+
+        .why-feat:hover .wf-icon svg {
+            stroke: #fff;
+        }
+
+        .wf-title {
+            font-family: 'Manrope', sans-serif;
+            font-size: 0.95rem;
+            font-weight: 800;
+   
+            margin-bottom: 6px;
+        }
+
+        .wf-desc {
+            font-size: 0.82rem;
+            color: var(--text-body);
+            line-height: 1.6;
+        }
+
+        /* ─── REVIEWS ─── */
+        .reviews {
+            padding: 120px 0;
+            background: var(--navy);
+        }
+
+        .reviews-header {
+            text-align: center;
+            margin-bottom: 64px;
+        }
+
+        .reviews-header .section-title {
+            color: var(--white);
+        }
+
+        .reviews-header .section-sub {
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        .reviews-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 32px;
+            width: 100%;
+        }
+
+        @media(max-width:900px) {
+            .reviews-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .review-card {
+            background: #FFFFFF;
+            border-radius: 16px;
+            padding: 40px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .review-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        }
+
+        .review-glow {
+            display: none;
+        }
+
+        .review-stars {
+            display: flex;
+            gap: 6px;
+            margin-bottom: 20px;
+        }
+
+        .review-stars svg {
+            width: 20px;
+            height: 20px;
+            fill: #FFB800;
+        }
+
+        .review-text {
+            font-size: 1rem;
+            font-weight: 500;
+            line-height: 1.8;
+            margin-bottom: 24px;
+            color: #1a1a1a;
+        }
+
+        .review-author {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .review-avatar {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #0A66FF, #0044CC);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Manrope', sans-serif;
+            font-weight: 800;
+            font-size: 1rem;
+            color: #fff;
+            flex-shrink: 0;
+        }
+
+        .review-name {
+            font-family: 'Manrope', sans-serif;
+            font-size: 0.95rem;
+            font-weight: 700;
+            color: #1a1a1a;
+            margin: 0;
+        }
+
+        .review-loc {
+            font-size: 0.8rem;
+            color: #666666;
+            margin: 4px 0 0 0;
+        }
+
+        /* ─── PROCESS ─── */
+        .process {
+            padding: 120px 0;
+            background: var(--navy);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .process-bg {
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(ellipse 60% 50% at 50% 0%, rgba(10, 102, 255, 0.1), transparent 60%);
+        }
+
+        .process-header {
+            text-align: center;
+            margin-bottom: 72px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .process-steps {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 0;
+            position: relative;
+            z-index: 2;
+        }
+
+        @media(max-width:768px) {
+            .process-steps {
+                grid-template-columns: 1fr;
+                gap: 24px;
+            }
+        }
+
+        .process-step {
+            text-align: center;
+            padding: 0 32px;
+            position: relative;
+        }
+
+        .process-step::after {
+            content: '';
+            position: absolute;
+            top: 44px;
+            left: calc(50% + 44px);
+            right: calc(-50% + 44px);
+            height: 2px;
+            background: linear-gradient(90deg, rgba(10, 102, 255, 0.5), rgba(10, 102, 255, 0.15));
+            pointer-events: none;
+        }
+
+        .process-step:last-child::after {
+            display: none;
+        }
+
+        @media(max-width:768px) {
+            .process-step::after {
+                display: none;
+            }
+        }
+
+        .step-num {
+            width: 88px;
+            height: 88px;
+            border-radius: 50%;
+            background: rgba(10, 102, 255, 0.1);
+            border: 2px solid rgba(10, 102, 255, 0.3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 32px;
+            position: relative;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .step-num:hover {
+            background: rgba(10, 102, 255, 0.2);
+            border-color: var(--blue);
+            transform: scale(1.1) rotate(360deg);
+        }
+
+        .step-num-inner {
+            font-family: 'Manrope', sans-serif;
+            font-size: 2rem;
+            font-weight: 900;
+            color: var(--blue);
+            line-height: 1;
+        }
+
+        .step-icon-wrap {
+            position: absolute;
+            bottom: -6px;
+            right: -6px;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            background: var(--blue);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 12px rgba(10, 102, 255, 0.5);
+            animation: iconBounce 2s ease-in-out infinite;
+        }
+
+        @keyframes iconBounce {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-4px);
+            }
+        }
+
+        .step-icon-wrap svg {
+            width: 13px;
+            height: 13px;
+        }
+
+        .step-title {
+            font-family: 'Manrope', sans-serif;
+            font-size: 1.2rem;
+            font-weight: 800;
+            color: var(--white);
+            margin-bottom: 12px;
+            letter-spacing: -0.01em;
+        }
+
+        .step-desc {
+            font-size: 0.88rem;
+            color: rgba(255, 255, 255, 0.45);
+            line-height: 1.7;
+        }
+
+        /* ─── CONTACT ─── */
+        .contact {
+            padding: 120px 0;
+            background: var(--gray);
+        }
+
+        .contact-inner {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            align-items: start;
+        }
+
+        @media(max-width:900px) {
+            .contact-inner {
+                grid-template-columns: 1fr;
+                gap: 48px;
+            }
+        }
+
+        .contact-info .section-title {
+            margin-bottom: 20px;
+        }
+
+        .contact-info .section-sub {
+            margin-bottom: 40px;
+        }
+
+        .contact-details {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .contact-detail {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            background: var(--white);
+            border: 1px solid var(--gray2);
+            border-radius: 16px;
+            padding: 16px 20px;
+            box-shadow: var(--shadow-card);
+            transition: all 0.3s ease;
+        }
+
+        .contact-detail:hover {
+            transform: translateX(8px);
+            border-color: rgba(10, 102, 255, 0.3);
+            box-shadow: 0 10px 30px rgba(10, 102, 255, 0.1);
+        }
+
+        .cd-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 10px;
+            background: var(--blue-dim);
+            border: 1px solid rgba(10, 102, 255, 0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            transition: all 0.3s ease;
+        }
+
+        .contact-detail:hover .cd-icon {
+            background: var(--blue);
+            transform: rotate(360deg);
+        }
+
+        .cd-icon svg {
+            width: 17px;
+            height: 17px;
+            stroke: #0A66FF;
+            transition: stroke 0.3s;
+        }
+
+        .contact-detail:hover .cd-icon svg {
+            stroke: #fff;
+        }
+
+        .cd-label {
+            font-size: 0.72rem;
+            color: var(--text-muted);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+        }
+
+        .cd-value {
+            font-family: 'Manrope', sans-serif;
+            font-size: 0.92rem;
+            font-weight: 700;
+            color: var(--navy);
+            margin-top: 2px;
+        }
+
+        .contact-form {
+            background: var(--white);
+            border: 1px solid var(--gray2);
+            border-radius: var(--r-card);
+            padding: 40px;
+            box-shadow: var(--shadow-card);
+        }
+
+        .form-title {
+            font-family: 'Manrope', sans-serif;
+            font-size: 1.3rem;
+            font-weight: 800;
+            color: var(--navy);
+            margin-bottom: 28px;
+            letter-spacing: -0.01em;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+        }
+
+        @media(max-width:500px) {
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            margin-bottom: 16px;
+        }
+
+        .form-group label {
+            font-size: 0.78rem;
+            font-weight: 700;
+            color: var(--navy);
+            letter-spacing: 0.02em;
+            text-transform: uppercase;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            border: 1px solid var(--gray2);
+            border-radius: 16px;
+            padding: 13px 16px;
+            font-family: 'DM Sans', sans-serif;
+            font-size: 0.92rem;
+            color: var(--navy);
+            background: var(--gray);
+            outline: none;
+            transition: all 0.3s;
+            width: 100%;
+            resize: none;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            border-color: var(--blue);
+            background: #fff;
+            box-shadow: 0 0 0 3px rgba(10, 102, 255, 0.1);
+            transform: translateY(-2px);
+        }
+
+        .form-group select {
+            appearance: none;
+            cursor: pointer;
+        }
+
+        .form-group textarea {
+            min-height: 100px;
+        }
+
+        .form-submit {
+            width: 100%;
+            background: var(--blue);
+            color: #fff;
+            border: none;
+            border-radius: var(--r-btn);
+            padding: 16px;
+            font-family: 'Manrope', sans-serif;
+            font-weight: 800;
+            font-size: 1rem;
+            cursor: pointer;
+            letter-spacing: 0.01em;
+            transition: all 0.3s;
+            box-shadow: 0 6px 24px rgba(10, 102, 255, 0.35);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .form-submit::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.3);
+            transform: translate(-50%, -50%);
+            transition: width 0.6s, height 0.6s;
+        }
+
+        .form-submit:hover::before {
+            width: 400px;
+            height: 400px;
+        }
+
+        .form-submit:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 36px rgba(10, 102, 255, 0.5);
+        }
+
+        .form-submit svg {
+            width: 18px;
+            height: 18px;
+        }
+
+        /* ─── FOOTER ─── */
+        footer {
+            background: var(--navy);
+            border-top: 1px solid rgba(255, 255, 255, 0.06);
+        }
+
+        .footer-main {
+            padding: 64px 0;
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 48px;
+        }
+
+        @media(max-width:900px) {
+            .footer-main {
+                grid-template-columns: 1fr 1fr;
+                gap: 32px;
+            }
+        }
+
+        @media(max-width:560px) {
+            .footer-main {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .footer-brand .logo {
+            margin-bottom: 16px;
+        }
+
+        .footer-desc {
+            font-size: 0.85rem;
+            color: rgba(255, 255, 255, 0.4);
+            line-height: 1.7;
+            max-width: 280px;
+        }
+
+        .footer-col h4 {
+            font-family: 'Manrope', sans-serif;
+            font-size: 0.75rem;
+            font-weight: 800;
+            color: rgba(255, 255, 255, 0.5);
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        .footer-col ul {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .footer-col ul li a {
+            font-size: 0.875rem;
+            color: rgba(255, 255, 255, 0.45);
+            text-decoration: none;
+            transition: all 0.2s;
+            position: relative;
+            padding-left: 0;
+        }
+
+        .footer-col ul li a::before {
+            content: '→';
+            position: absolute;
+            left: -15px;
+            opacity: 0;
+            transition: all 0.3s;
+        }
+
+        .footer-col ul li a:hover::before {
+            left: -20px;
+            opacity: 1;
+        }
+
+        .footer-col ul li a:hover {
+            color: rgba(255, 255, 255, 0.85);
+            padding-left: 25px;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.06);
+            padding: 24px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+
+        .footer-copy {
+            font-size: 0.8rem;
+            color: rgba(255, 255, 255, 0.25);
+        }
+
+        .social-links {
+            display: flex;
+            gap: 10px;
+        }
+
+        .social-link {
+            width: 36px;
+            height: 36px;
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgba(255, 255, 255, 0.4);
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+
+        .social-link:hover {
+            background: var(--blue);
+            border-color: var(--blue);
+            color: #fff;
+            transform: translateY(-3px) rotate(360deg);
+        }
+
+        .social-link svg {
+            width: 16px;
+            height: 16px;
+        }
+
+        /* ─── ANIMATIONS ─── */
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(24px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fade-up {
+            animation: fadeUp 0.7s ease both;
+        }
+
+        .delay-1 {
+            animation-delay: 0.1s;
+        }
+
+        .delay-2 {
+            animation-delay: 0.2s;
+        }
+
+        .delay-3 {
+            animation-delay: 0.3s;
+        }
+
+        .delay-4 {
+            animation-delay: 0.4s;
+        }
+
+        /* CTA Pulse Animation */
+        @keyframes ctaPulse {
+
+            0%,
+            100% {
+                box-shadow: 0 6px 30px rgba(10, 102, 255, 0.45);
+            }
+
+            50% {
+                box-shadow: 0 6px 40px rgba(10, 102, 255, 0.65);
+            }
+        }
+
+        .btn-primary {
+            animation: ctaPulse 2s ease-in-out infinite;
+        }
+        /* ─── WHY CHOOSE US OVERRIDE ─── */
+        .why {
+            padding: 100px 0;
+            background: #ffffff;
+        }
+
+        .why .container {
+            max-width: 100%;
+            width: 80%;
+            margin: 0 auto;
+            padding: 0;
+        }
+
+        @media(max-width:900px) {
+            .why .container { width: 90%; }
+        }
+
+        @media(max-width:560px) {
+            .why .container { width: 95%; }
+        }
+
+        .why-header {
+            margin-bottom: 48px;
+        }
+
+        .why-header .section-title {
+            color: var(--navy);
+            font-size: clamp(1.8rem, 3vw, 2.6rem);
+        }
+
+        .why-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: auto auto;
+            gap: 24px;
+        }
+
+        .why-feat:nth-child(1) { grid-column: 1; grid-row: 1; }
+        .why-feat:nth-child(2) { grid-column: 2; grid-row: 1; }
+        .why-feat:nth-child(3) { grid-column: 3; grid-row: 1 / 3; min-height: 380px; display: flex; flex-direction: column; }
+        .why-feat:nth-child(4) { grid-column: 1; grid-row: 2; }
+        .why-feat:nth-child(5) { grid-column: 2; grid-row: 2; }
+
+        @media(max-width:900px) {
+            .why-grid { grid-template-columns: 1fr 1fr; }
+            .why-feat:nth-child(3),
+            .why-feat:nth-child(4),
+            .why-feat:nth-child(5) {
+                grid-column: auto;
+                grid-row: auto;
+                min-height: auto;
+            }
+        }
+
+        @media(max-width:560px) {
+            .why-grid { grid-template-columns: 1fr; }
+        }
+
+        .why-feat {
+            background: #F5F7FA;
+            border: 1px solid #E8ECF2;
+            border-radius: 16px;
+            padding: 32px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .why-feat:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 32px rgba(0,0,0,0.08);
+        }
+
+        .why-feat-highlight {
+            background: linear-gradient(160deg, #0A3080 0%, #0A66FF 100%);
+            border: none;
+        }
+
+        .why-feat-highlight:hover {
+            box-shadow: 0 20px 50px rgba(10,102,255,0.35);
+        }
+
+        .why-feat-highlight .wf-title {
+            color: #ffffff;
+            font-size: 1.3rem;
+        }
+
+        .why-feat-highlight .wf-desc {
+            color: rgba(255,255,255,0.85);
+        }
+
+        .why-feat-highlight .wf-icon {
+            background: rgba(255,255,255,0.15);
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+
+        .why-feat-highlight .wf-icon svg {
+            stroke: #ffffff;
+        }
+
+        .why-cta-btn {
+            display: inline-block;
+            background: #0A66FF;
+            color: #fff;
+            font-family: 'Manrope', sans-serif;
+            font-weight: 700;
+            font-size: 0.95rem;
+            text-decoration: none;
+            padding: 14px 28px;
+            border-radius: 12px;
+            border: 2px solid rgba(255,255,255,0.3);
+            margin-top: auto;
+            padding-top: 14px;
+            width: fit-content;
+            transition: all 0.25s ease;
+        }
+
+        .why-cta-btn:hover {
+            background: #fff;
+            color: #0A66FF;
+        }
+
+        .wf-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 12px;
+            background: rgba(10,102,255,0.1);
+            border: 1px solid rgba(10,102,255,0.15);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            flex-shrink: 0;
+        }
+
+        .wf-icon svg {
+            width: 22px;
+            height: 22px;
+            stroke: var(--blue);
+        }
+
+        .wf-title {
+            font-family: 'Manrope', sans-serif;
+            font-size: 1.05rem;
+            font-weight: 800;
+            color: #000000;
+            margin-bottom: 10px;
+        }
+
+        .wf-desc {
+            font-size: 0.9rem;
+            color: #333333;
+            line-height: 1.65;
+        }
+
+        /* ─── RESULTS SECTION OVERRIDE ─── */
+        .before-after {
+            padding: 100px 0;
+            background: var(--navy);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .before-after .container {
+            max-width: 100%;
+            width: 80%;
+            margin: 0 auto;
+            padding: 0;
+        }
+
+        @media(max-width:900px) {
+            .before-after .container { width: 90%; }
+        }
+
+        @media(max-width:560px) {
+            .before-after .container { width: 95%; }
+        }
+
+        .ba-header {
+            text-align: center;
+            margin-bottom: 56px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .ba-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 32px;
+            position: relative;
+            z-index: 2;
+        }
+
+        @media(max-width:900px) {
+            .ba-grid { grid-template-columns: 1fr; }
+        }
+
+        .ba-card {
+            border-radius: 16px;
+            overflow: hidden;
+            border: 1px solid rgba(255,255,255,0.08);
+            box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            background: #1a1f2e;
+        }
+
+        .ba-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 24px 60px rgba(0,0,0,0.5);
+        }
+
+        .ba-visual {
+            height: auto;
+            position: relative;
+            display: block;
+            background: transparent;
+        }
+
+        .ba-video-container {
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            background: #1a1f2e;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .ba-card:hover .ba-video-container {
+            background: linear-gradient(135deg, #1e2540 0%, #2a3450 100%);
+        }
+
+        .ba-video-placeholder {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            color: rgba(255,255,255,0.75);
+            text-align: center;
+            padding: 24px;
+            gap: 0;
+            transition: color 0.3s ease;
+        }
+
+        .ba-card:hover .ba-video-placeholder {
+            color: rgba(255,255,255,1);
+        }
+
+        .ba-info {
+            background: #1a1f2e;
+            padding: 20px 24px;
+            border-top: 1px solid rgba(255,255,255,0.06);
+            transition: background 0.3s ease;
+        }
+
+        .ba-card:hover .ba-info {
+            background: #1e2540;
+        }
+
+        .ba-surface {
+            font-family: 'Manrope', sans-serif;
+            font-size: 1rem;
+            font-weight: 800;
+            color: #ffffff;
+            margin-bottom: 4px;
+        }
+
+        .ba-detail {
+            font-size: 0.82rem;
+            color: rgba(255,255,255,0.45);
+        }
+
+        /* ─── SERVICES OVERRIDE ─── */
+        .services {
+            padding: 100px 0;
+            background: #ffffff;
+        }
+
+        .services .container {
+            max-width: 100%;
+            width: 80%;
+            margin: 0 auto;
+            padding: 0;
+        }
+
+        .services-header {
+            text-align: center;
+            margin-bottom: 56px;
+        }
+
+        .services-header .section-sub {
+            margin: 0 auto;
+            color: var(--text-body);
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 32px;
+        }
+
+        @media(max-width:900px) {
+            .services-grid { grid-template-columns: repeat(2, 1fr); }
+            .services .container { width: 90%; }
+        }
+
+        @media(max-width:560px) {
+            .services-grid { grid-template-columns: 1fr; }
+            .services .container { width: 95%; }
+        }
+
+        .service-card {
+            background: #ffffff;
+            border: 1px solid #E8ECF2;
+            border-radius: 16px;
+            overflow: hidden;
+            padding: 0;
+            transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+            cursor: pointer;
+        }
+
+        .service-card::before { display: none; }
+
+        .service-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 20px 48px rgba(10,102,255,0.13);
+            border-color: rgba(10,102,255,0.25);
+        }
+
+        .svc-img-wrap {
+            width: 100%;
+            aspect-ratio: 4 / 3;
+            min-height: 240px;
+            overflow: hidden;
+            background: #dce3ef;
+            position: relative;
+        }
+
+        .svc-img-placeholder {
+            width: 100%;
+            height: 100%;
+            min-height: 240px;
+            background: linear-gradient(135deg, #c8d3e8 0%, #a8b8d0 100%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            color: #6a7f9a;
+            font-size: 0.78rem;
+            font-weight: 600;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            transition: transform 0.4s ease;
+        }
+
+        .svc-img-placeholder::before {
+            content: '';
+            display: block;
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            border: 3px solid rgba(106,127,154,0.4);
+            border-top-color: rgba(106,127,154,0.8);
+        }
+
+        .service-card:hover .svc-img-placeholder {
+            transform: scale(1.04);
+        }
+
+        .svc-img-wrap img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.4s ease;
+        }
+
+        .service-card:hover .svc-img-wrap img {
+            transform: scale(1.04);
+        }
+
+        .svc-body {
+            padding: 28px;
+        }
+
+        .svc-icon { display: none; }
+
+        .svc-title {
+            font-family: 'Manrope', sans-serif;
+            font-size: 1.15rem;
+            font-weight: 800;
+            color: #0B0F19;
+            margin-bottom: 10px;
+            letter-spacing: -0.01em;
+        }
+
+        .svc-desc {
+            font-size: 0.9rem;
+            color: #4A5168;
+            line-height: 1.7;
+            margin-bottom: 20px;
+        }
+
+        .svc-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 0.82rem;
+            font-weight: 700;
+            color: #0A66FF;
+            text-decoration: none;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+            transition: gap 0.2s ease;
+            margin-top: 0;
+        }
+
+        .svc-link:hover { gap: 10px; }
+
+        .svc-link svg { width: 14px; height: 14px; }
+
+        /* ─── REVIEWS OVERRIDE ─── */
+        .reviews { padding: 100px 0; background: #F5F7FA; }
+        .reviews .container { max-width: 100%; width: 80%; margin: 0 auto; padding: 0; }
+        @media(max-width:900px) { .reviews .container { width: 90%; } }
+        @media(max-width:560px) { .reviews .container { width: 95%; } }
+        .reviews-header { text-align: center; margin-bottom: 56px; }
+        .reviews-header .section-title { color: #0B0F19; }
+        .reviews-header .section-sub { color: #4A5168; margin: 0 auto; }
+        .reviews-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
+        @media(max-width:900px) { .reviews-grid { grid-template-columns: 1fr; } }
+        .review-card { background: #ffffff; border-radius: 16px; padding: 36px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); transition: transform 0.3s ease, box-shadow 0.3s ease; border: 1px solid #E8ECF2; }
+        .review-card:hover { transform: translateY(-4px); box-shadow: 0 16px 40px rgba(0,0,0,0.12); }
+        .review-glow { display: none; }
+        .review-stars { display: flex; gap: 4px; margin-bottom: 20px; }
+        .review-stars svg { width: 20px; height: 20px; fill: #FFB800; }
+        .review-text { font-size: 0.95rem; color: #1a1a1a; line-height: 1.75; margin-bottom: 24px; font-style: normal; font-weight: 400; }
+        .review-author { display: flex; align-items: center; gap: 12px; }
+        .review-avatar { width: 44px; height: 44px; border-radius: 50%; background: linear-gradient(135deg, #0A66FF, #0044CC); display: flex; align-items: center; justify-content: center; font-family: 'Manrope', sans-serif; font-weight: 800; font-size: 0.9rem; color: #fff; flex-shrink: 0; }
+        .review-name { font-family: 'Manrope', sans-serif; font-size: 0.9rem; font-weight: 700; color: #0B0F19; margin: 0; }
+        .review-loc { font-size: 0.78rem; color: #666666; margin: 3px 0 0 0; }
+
+        /* ─── PROCESS OVERRIDE ─── */
+        .process { padding: 100px 0; background: var(--navy); }
+        .process .container { max-width: 100%; width: 80%; margin: 0 auto; padding: 0; }
+        @media(max-width:900px) { .process .container { width: 90%; } }
+        @media(max-width:560px) { .process .container { width: 95%; } }
+        .process-header { text-align: center; margin-bottom: 64px; position: relative; z-index: 2; }
+        .process-steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; position: relative; z-index: 2; }
+        @media(max-width:768px) { .process-steps { grid-template-columns: 1fr; gap: 32px; } }
+
+        /* ─── CONTACT OVERRIDE ─── */
+        .contact { padding: 100px 0; background: #ffffff; }
+        .contact .container { max-width: 100%; width: 80%; margin: 0 auto; padding: 0; }
+        @media(max-width:900px) { .contact .container { width: 90%; } }
+        @media(max-width:560px) { .contact .container { width: 95%; } }
+        .contact-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start; }
+        @media(max-width:900px) { .contact-inner { grid-template-columns: 1fr; gap: 48px; } }
+        .contact-info .section-eyebrow { color: var(--blue); }
+        .contact-info .section-title { color: #0B0F19; }
+        .contact-info .section-sub { color: #4A5168; }
+        .contact-details { margin-top: 32px; }
+        .contact-detail-item { display: flex; align-items: center; gap: 14px; margin-bottom: 20px; color: #0B0F19; font-weight: 500; }
+        .contact-detail-item svg { stroke: var(--blue); }
+        .contact-form-card { background: #F5F7FA; border: 1px solid #E8ECF2; border-radius: 20px; padding: 40px; box-shadow: 0 4px 24px rgba(0,0,0,0.06); }
+        .contact-form-card h3 { font-family: 'Manrope', sans-serif; font-size: 1.4rem; font-weight: 800; color: #0B0F19; margin-bottom: 28px; }
+        .form-group { margin-bottom: 20px; }
+        .form-group label { display: block; font-size: 0.85rem; font-weight: 600; color: #4A5168; margin-bottom: 8px; }
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            background: #ffffff;
+            border: 2px solid #E8ECF2;
+            border-radius: 10px;
+            padding: 13px 16px;
+            color: #0B0F19;
+            font-size: 0.95rem;
+            font-family: 'DM Sans', sans-serif;
+            transition: border-color 0.2s ease;
+            outline: none;
+            box-sizing: border-box;
+            -webkit-appearance: none;
+        }
+        .form-group input::placeholder,
+        .form-group textarea::placeholder { color: #9BA3B5; }
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus { border-color: #0A66FF; }
+        .form-group select { color: #0B0F19; cursor: pointer; }
+        .form-group select option { background: #ffffff; color: #0B0F19; }
+
+        /* ─── FOOTER OVERRIDE ─── */
+        footer { background: var(--navy); border-top: 1px solid rgba(255,255,255,0.08); padding: 80px 0 40px; }
+        footer .container { max-width: 100%; width: 80%; margin: 0 auto; padding: 0; }
+        @media(max-width:900px) { footer .container { width: 90%; } }
+        @media(max-width:560px) { footer .container { width: 95%; } }
+        .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 60px; margin-bottom: 60px; }
+        @media(max-width:900px) { .footer-grid { grid-template-columns: 1fr 1fr; gap: 40px; } }
+        @media(max-width:560px) { .footer-grid { grid-template-columns: 1fr; gap: 32px; } }
+        .footer-bottom { border-top: 1px solid rgba(255,255,255,0.08); padding-top: 32px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px; }
+        .footer-copy { font-size: 0.85rem; color: rgba(255,255,255,0.4); }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- NAV -->
+    <nav id="navbar">
+        <div class="nav-inner">
+            <a href="#" class="logo">
+                <div class="logo-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M12 2a5 5 0 0 1 5 5c0 5-5 10-5 10S7 12 7 7a5 5 0 0 1 5-5z" />
+                        <path d="M5 20c1.5-2 3.5-3 7-3s5.5 1 7 3" />
+                    </svg>
+                </div>
+                Double A Power Wash
+            </a>
+            <ul class="nav-links">
+                <li><a href="#services">Services</a></li>
+                <li><a href="#results">Results</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <a href="#contact" class="nav-cta">Get Free Estimate</a>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-grid"></div>
+        <div class="hero-rings">
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+        </div>
+        <div class="container hero-content">
+            <div class="hero-inner">
+                <div class="hero-text">
+                    <div class="hero-badge fade-up">
+                        <div class="badge-dot"></div>
+                        Now Serving All of New Jersey
+                    </div>
+                    <h1 class="hero-title fade-up delay-1">
+                        Restore Your<br>
+                        Property's<br>
+                        <span>Curb Appeal</span>
+                    </h1>
+                    <p class="hero-subtitle fade-up delay-2">
+                        Professional residential and commercial pressure washing across New Jersey. We bring the power,
+                        so your property shines.
+                    </p>
+                    <div class="hero-ctas fade-up delay-3">
+                        <a href="#contact" class="btn-primary">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M5 12h14M12 5l7 7-7 7" />
+                            </svg>
+                            Get Free Estimate
+                        </a>
+                        <a href="#services" class="btn-outline">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" style="width:16px;height:16px">
+                                <circle cx="12" cy="12" r="10" />
+                                <path d="M10 8l6 4-6 4V8z" />
+                            </svg>
+                            View Services
+                        </a>
+                    </div>
+                    <div class="hero-stats fade-up delay-4">
+                        <div class="stat-item">
+                            <span class="stat-num"><span>500</span>+</span>
+                            <span class="stat-label">Homes Cleaned</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-num">⭐ <span>5.0</span></span>
+                            <span class="stat-label">Star Local Service</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-num">Res <span>&</span> Com</span>
+                            <span class="stat-label">Residential & Commercial</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="hero-img-card">
+                        <div class="wash-visual">
+                            <div class="wash-half-dirty">
+                                <div class="dirt-pattern"></div>
+                                <div class="mold-spots"></div>
+                            </div>
+                            <div class="wash-half-clean">
+                                <div class="sparkles">
+                                    <div class="sparkle"></div>
+                                    <div class="sparkle"></div>
+                                    <div class="sparkle"></div>
+                                    <div class="sparkle"></div>
+                                </div>
+                            </div>
+                            <div class="nozzle-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                                    <path d="M14 2v6h6" />
+                                    <path d="M16 13H8M16 17H8M10 9H8" />
+                                </svg>
+                            </div>
+                            <div class="water-stream"></div>
+                            <div class="water-drops">
+                                <div class="drop"></div>
+                                <div class="drop"></div>
+                                <div class="drop"></div>
+                                <div class="drop"></div>
+                                <div class="drop"></div>
+                            </div>
+                            <span class="wash-label label-before">Before</span>
+                            <span class="wash-label label-after">After</span>
+                        </div>
+                    </div>
+                    <!-- Floating cards -->
+                    <div class="float-card fc1">
+                        <div class="float-card-inner">
+                            <div class="fc-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="#0A66FF" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12" />
+                                </svg>
+                            </div>
+                            <div>
+                                <div class="fc-text-label">Satisfaction</div>
+                                <div class="fc-text-val">100% Guaranteed</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="float-card fc2">
+                        <div class="float-card-inner">
+                            <div class="fc-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="#0A66FF" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                                </svg>
+                            </div>
+                            <div>
+                                <div class="fc-text-label">Certification</div>
+                                <div class="fc-text-val">Fully Insured</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TRUST BAR -->
+    <section class="trust-bar">
+        <div class="trust-inner">
+            <div class="trust-item">
+                <div class="trust-icon">
+                    <img src="icona.svg" alt="Fully Insured" />
+                </div>
+                Fully Insured
+            </div>
+            <div class="trust-item">
+                <div class="trust-icon">
+                    <img src="iconb.svg" alt="Reliable Scheduling" />
+                </div>
+                Reliable Scheduling
+            </div>
+            <div class="trust-item">
+                <div class="trust-icon">
+                    <img src="iconc.svg" alt="Professional Equipment" />
+                </div>
+                Professional Equipment
+            </div>
+            <div class="trust-item">
+                <div class="trust-icon">
+                    <img src="icond.svg" alt="Satisfaction Guaranteed" />
+                </div>
+                Satisfaction Guaranteed
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="services scroll-reveal" id="services">
+        <div class="container">
+            <div class="services-header">
+                <div class="section-eyebrow">What We Do</div>
+                <h2 class="section-title">Professional cleaning<br>for every surface</h2>
+                <p class="section-sub">From driveways to commercial buildings, we handle every exterior cleaning
+                    challenge with expert precision and top-tier equipment.</p>
+            </div>
+            <div class="services-grid">
+
+                <div class="service-card scroll-reveal">
+                    <div class="svc-img-wrap">
+                        <img src="housewashing.png" alt="House Washing" />
+                    </div>
+                    <div class="svc-body">
+                        <div class="svc-title">House Washing</div>
+                        <div class="svc-desc">Restore your home's exterior to like-new condition. We safely remove dirt, mold, mildew, and oxidation from siding, brick, and stucco.</div>
+                        <a href="#contact" class="svc-link">Get a quote <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+                    </div>
+                </div>
+
+                <div class="service-card scroll-reveal">
+                    <div class="svc-img-wrap">
+                        <img src="drivewaycleaning.png" alt="Driveway Cleaning" />
+                    </div>
+                    <div class="svc-body">
+                        <div class="svc-title">Driveway Cleaning</div>
+                        <div class="svc-desc">Blast away years of oil stains, tire marks, and embedded grime. Our high-pressure technique leaves concrete and asphalt spotless.</div>
+                        <a href="#contact" class="svc-link">Get a quote <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+                    </div>
+                </div>
+
+                <div class="service-card scroll-reveal">
+                    <div class="svc-img-wrap">
+                        <img src="sidewalkcleaning.png" alt="Sidewalk Cleaning" />
+                    </div>
+                    <div class="svc-body">
+                        <div class="svc-title">Sidewalk Cleaning</div>
+                        <div class="svc-desc">Keep walkways safe and presentable. We remove algae, gum, stains, and buildup that create hazardous slip conditions.</div>
+                        <a href="#contact" class="svc-link">Get a quote <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+                    </div>
+                </div>
+
+                <div class="service-card scroll-reveal">
+                    <div class="svc-img-wrap">
+                        <img src="patioanddecks.png" alt="Patios & Decks" />
+                    </div>
+                    <div class="svc-body">
+                        <div class="svc-title">Patios & Decks</div>
+                        <div class="svc-desc">Revive your outdoor living spaces. We treat wood, composite, stone, and concrete surfaces safely without causing damage.</div>
+                        <a href="#contact" class="svc-link">Get a quote <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+                    </div>
+                </div>
+
+                <div class="service-card scroll-reveal">
+                    <div class="svc-img-wrap">
+                        <img src="commercialwashing.png" alt="Commercial Washing" />
+                    </div>
+                    <div class="svc-body">
+                        <div class="svc-title">Commercial Washing</div>
+                        <div class="svc-desc">First impressions matter for business. We keep storefronts, parking lots, and commercial properties clean and professional year-round.</div>
+                        <a href="#contact" class="svc-link">Get a quote <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+                    </div>
+                </div>
+
+                <div class="service-card scroll-reveal">
+                    <div class="svc-img-wrap">
+                        <img src="exteriorcleaning.png" alt="Exterior Surface Cleaning" />
+                    </div>
+                    <div class="svc-body">
+                        <div class="svc-title">Exterior Surface Cleaning</div>
+                        <div class="svc-desc">Fences, retaining walls, gutters, and more. Our versatile service covers all exterior surfaces on your property.</div>
+                        <a href="#contact" class="svc-link">Get a quote <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- BEFORE & AFTER -->
+    <section class="before-after scroll-reveal" id="results">
+        <div class="ba-bg"></div>
+        <div class="container">
+            <div class="ba-header">
+                <div class="section-eyebrow" style="color:#6FA8FF">Real Results</div>
+                <h2 class="section-title light">See the transformation</h2>
+                <p class="section-sub light" style="margin:0 auto">The difference is night and day. Our pressure washing
+                    delivers results you can see from the street.</p>
+            </div>
+            <div class="ba-grid">
+
+                <div class="ba-card scroll-reveal">
+                    <div class="ba-visual">
+                        <div class="ba-video-container">
+                            <iframe
+                                src="https://www.youtube.com/embed/dQw4w9WgXcQ?rel=0&modestbranding=1"
+                                title="House Siding Cleaning"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen
+                                style="width:100%;height:100%;position:absolute;top:0;left:0;border:none;">
+                            </iframe>
+                        </div>
+                    </div>
+                    <div class="ba-info">
+                        <div class="ba-surface">House Siding</div>
+                        <div class="ba-detail">Mold & mildew removal — Ridgewood, NJ</div>
+                    </div>
+                </div>
+
+                <div class="ba-card scroll-reveal">
+                    <div class="ba-visual">
+                        <div class="ba-video-container">
+                            <iframe
+                                src="https://www.youtube.com/embed/dQw4w9WgXcQ?rel=0&modestbranding=1"
+                                title="Concrete Driveway Cleaning"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen
+                                style="width:100%;height:100%;position:absolute;top:0;left:0;border:none;">
+                            </iframe>
+                        </div>
+                    </div>
+                    <div class="ba-info">
+                        <div class="ba-surface">Concrete Driveway</div>
+                        <div class="ba-detail">Oil & stain removal — Princeton, NJ</div>
+                    </div>
+                </div>
+
+                <div class="ba-card scroll-reveal">
+                    <div class="ba-visual">
+                        <div class="ba-video-container">
+                            <iframe
+                                src="https://www.youtube.com/embed/dQw4w9WgXcQ?rel=0&modestbranding=1"
+                                title="Patio & Deck Cleaning"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen
+                                style="width:100%;height:100%;position:absolute;top:0;left:0;border:none;">
+                            </iframe>
+                        </div>
+                    </div>
+                    <div class="ba-info">
+                        <div class="ba-surface">Patio & Deck</div>
+                        <div class="ba-detail">Algae & weathering — Montclair, NJ</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY CHOOSE US -->
+    <section class="why scroll-reveal" id="about">
+        <div class="container">
+            <div class="why-header">
+                <div class="section-eyebrow">Why Choose Us</div>
+                <h2 class="section-title">Why <span style="color:var(--blue)">Double A Power Wash</span> is the right choice for you</h2>
+            </div>
+            <div class="why-grid">
+
+                <div class="why-feat">
+                    <div class="wf-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
+                        </svg>
+                    </div>
+                    <div class="wf-title">Reliable Service</div>
+                    <div class="wf-desc">We show up on time, every time. No ghost appointments, no surprises.</div>
+                </div>
+
+                <div class="why-feat">
+                    <div class="wf-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="20 6 9 17 4 12"/>
+                        </svg>
+                    </div>
+                    <div class="wf-title">Professional Results</div>
+                    <div class="wf-desc">Commercial-grade equipment and techniques for results that exceed expectations.</div>
+                </div>
+
+                <div class="why-feat why-feat-highlight">
+                    <div class="wf-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+                        </svg>
+                    </div>
+                    <div class="wf-title">Professional Equipment</div>
+                    <div class="wf-desc">We use commercial-grade pressure washers and eco-friendly detergents that deliver deep cleaning results every time.</div>
+                    <div class="wf-desc" style="margin-top:12px;">Whether it's a driveway, roof, or commercial property — we have the right tools for the job.</div>
+                    <a href="#contact" class="why-cta-btn">Get Free Estimate &rarr;</a>
+                </div>
+
+                <div class="why-feat">
+                    <div class="wf-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                        </svg>
+                    </div>
+                    <div class="wf-title">Attention to Detail</div>
+                    <div class="wf-desc">We notice the spots others miss — thoroughness is our standard, not an option.</div>
+                </div>
+
+                <div class="why-feat">
+                    <div class="wf-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.99 15a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.9 4.26h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 11a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 17.92z"/>
+                        </svg>
+                    </div>
+                    <div class="wf-title">Fast Response</div>
+                    <div class="wf-desc">Call or text and hear back fast. We value your time as much as our own.</div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- REVIEWS -->
+    <section class="reviews scroll-reveal" id="reviews">
+        <div class="container">
+            <div class="reviews-header">
+                <div class="section-eyebrow">Customer Reviews</div>
+                <h2 class="section-title">What our neighbors say</h2>
+                <p class="section-sub" style="margin:0 auto">Don't take our word for it. Here's what real New Jersey
+                    homeowners and business owners have to say.</p>
+            </div>
+            <div class="reviews-grid">
+
+                <div class="review-card scroll-reveal">
+                    <div class="review-glow"></div>
+                    <div class="review-stars">
+                        <svg viewBox="0 0 24 24">
+                            <polygon
+                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                        </svg>
+                        <svg viewBox="0 0 24 24">
+                            <polygon
+                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                        </svg>
+                        <svg viewBox="0 0 24 24">
+                            <polygon
+                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                        </svg>
+                        <svg viewBox="0 0 24 24">
+                            <polygon
+                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                        </svg>
+                        <svg viewBox="0 0 24 24">
+                            <polygon
+                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                        </svg>
+                    </div>
+                    <p class="review-text">"Absolutely incredible results. My driveway had 10 years of stains and they
+                        made it look brand new in just a couple hours. Highly recommend to anyone in NJ!"</p>
+                    <div class="review-author">
+                        <div class="review-avatar">MR</div>
+                        <div>
+                            <div class="review-name">Michael R.</div>
+                            <div class="review-loc">Montclair, NJ • House Washing</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card scroll-reveal">
+                    <div class="review-glow"></div>
+                    <div class="review-stars">
+                        <svg viewBox="0 0 24 24">
+                            <polygon
+                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                        </svg>
+                        <svg viewBox="0 0 24 24">
+                            <polygon
+                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                        </svg>
+                        <svg viewBox="0 0 24 24">
+                            <polygon
+                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                        </svg>
+                        <svg viewBox="0 0 24 24">
+                            <polygon
+                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                        </svg>
+                        <svg viewBox="0 0 24 24">
+                            <polygon
+                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                        </svg>
+                    </div>
+                    <p class="review-text">"We hired Double A for our commercial building and the difference was night
+                        and day. Professional, punctual, and reasonably priced. Will absolutely use them again."</p>
+                    <div class="review-author">
+                        <div class="review-avatar">ST</div>
+                        <div>
+                            <div class="review-name">Sarah T.</div>
+                            <div class="review-loc">Princeton, NJ • Commercial Washing</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card scroll-reveal">
+                    <div class="review-glow"></div>
+                    <div class="review-stars">
+                        <svg viewBox="0 0 24 24">
+                            <polygon
+                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                        </svg>
+                        <svg viewBox="0 0 24 24">
+                            <polygon
+                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                        </svg>
+                        <svg viewBox="0 0 24 24">
+                            <polygon
+                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                        </svg>
+                        <svg viewBox="0 0 24 24">
+                            <polygon
+                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                        </svg>
+                        <svg viewBox="0 0 24 24">
+                            <polygon
+                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                        </svg>
+                    </div>
+                    <p class="review-text">"My deck looked like new after their service. They were careful around my
+                        plants and garden, which I really appreciated. Truly eco-conscious and professional team."</p>
+                    <div class="review-author">
+                        <div class="review-avatar">JL</div>
+                        <div>
+                            <div class="review-name">Jennifer L.</div>
+                            <div class="review-loc">Ridgewood, NJ • Deck Cleaning</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section class="process scroll-reveal">
+        <div class="process-bg"></div>
+        <div class="container">
+            <div class="process-header">
+                <div class="section-eyebrow" style="color:#6FA8FF">How It Works</div>
+                <h2 class="section-title light">Three simple steps<br>to a cleaner property</h2>
+            </div>
+            <div class="process-steps">
+
+                <div class="process-step scroll-reveal">
+                    <div class="step-num">
+                        <div class="step-num-inner">1</div>
+                        <div class="step-icon-wrap">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.99 15a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.9 4.26h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 11a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 17.92z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="step-title">Request a Quote</div>
+                    <div class="step-desc">Fill out our quick form or give us a call. Tell us about your property and
+                        what needs cleaning — we'll get back to you fast.</div>
+                </div>
+
+                <div class="process-step scroll-reveal">
+                    <div class="step-num">
+                        <div class="step-num-inner">2</div>
+                        <div class="step-icon-wrap">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                                <line x1="16" y1="2" x2="16" y2="6" />
+                                <line x1="8" y1="2" x2="8" y2="6" />
+                                <line x1="3" y1="10" x2="21" y2="10" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="step-title">Schedule Service</div>
+                    <div class="step-desc">Pick a date and time that works for you. We'll confirm your appointment and
+                        show up on time with all the equipment we need.</div>
+                </div>
+
+                <div class="process-step scroll-reveal">
+                    <div class="step-num">
+                        <div class="step-num-inner">3</div>
+                        <div class="step-icon-wrap">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="step-title">Enjoy the Results</div>
+                    <div class="step-desc">Sit back and watch the transformation. Your property will look cleaner than
+                        it has in years — guaranteed or we'll make it right.</div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact scroll-reveal" id="contact">
+        <div class="container">
+            <div class="contact-inner">
+                <div class="contact-info">
+                    <div class="section-eyebrow">Get in Touch</div>
+                    <h2 class="section-title">Get your free<br>estimate today</h2>
+                    <p class="section-sub">No obligation, no pressure. Just a free, honest quote for making your
+                        property look its best. We serve all of New Jersey.</p>
+                    <div class="contact-details" style="margin-top:40px">
+                        <div class="contact-detail">
+                            <div class="cd-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path
+                                        d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                    <polyline points="22,6 12,13 2,6" />
+                                </svg>
+                            </div>
+                            <div>
+                                <div class="cd-label">Email</div>
+                                <div class="cd-value">DoubleAPowerWashLLC@gmail.com</div>
+                            </div>
+                        </div>
+                        <div class="contact-detail">
+                            <div class="cd-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                                    <circle cx="12" cy="10" r="3" />
+                                </svg>
+                            </div>
+                            <div>
+                                <div class="cd-label">Service Area</div>
+                                <div class="cd-value">All of New Jersey</div>
+                            </div>
+                        </div>
+                        <div class="contact-detail">
+                            <div class="cd-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                                </svg>
+                            </div>
+                            <div>
+                                <div class="cd-label">Insurance</div>
+                                <div class="cd-value">Fully Licensed & Insured</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <div class="form-title">Request Free Estimate</div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>First Name</label>
+                            <input type="text" placeholder="John">
+                        </div>
+                        <div class="form-group">
+                            <label>Last Name</label>
+                            <input type="text" placeholder="Smith">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Email Address</label>
+                        <input type="email" placeholder="john@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label>Phone Number</label>
+                        <input type="tel" placeholder="(555) 000-0000">
+                    </div>
+                    <div class="form-group">
+                        <label>Service Needed</label>
+                        <select>
+                            <option value="">Select a service...</option>
+                            <option>House Washing</option>
+                            <option>Driveway Cleaning</option>
+                            <option>Sidewalk Cleaning</option>
+                            <option>Patios & Decks</option>
+                            <option>Commercial Pressure Washing</option>
+                            <option>Exterior Surface Cleaning</option>
+                            <option>Multiple Services</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Message (Optional)</label>
+                        <textarea placeholder="Tell us about your property or any specific concerns..."></textarea>
+                    </div>
+                    <button class="form-submit"
+                        onclick="this.innerHTML='<svg viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'currentColor\' stroke-width=\'2.5\' style=\'width:18px;height:18px\'><polyline points=\'20 6 9 17 4 12\'/></svg> Request Sent!'">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M5 12h14M12 5l7 7-7 7" />
+                        </svg>
+                        Request Free Estimate
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <div class="logo-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 2a5 5 0 0 1 5 5c0 5-5 10-5 10S7 12 7 7a5 5 0 0 1 5-5z" />
+                                <path d="M5 20c1.5-2 3.5-3 7-3s5.5 1 7 3" />
+                            </svg>
+                        </div>
+                        Double A Power Wash
+                    </a>
+                    <p class="footer-desc">Professional pressure washing services for residential and commercial
+                        properties across New Jersey. Fully insured, satisfaction guaranteed.</p>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">House Washing</a></li>
+                        <li><a href="#services">Driveway Cleaning</a></li>
+                        <li><a href="#services">Sidewalk Cleaning</a></li>
+                        <li><a href="#services">Patios & Decks</a></li>
+                        <li><a href="#services">Commercial Washing</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#results">Our Work</a></li>
+                        <li><a href="#reviews">Reviews</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="mailto:DoubleAPowerWashLLC@gmail.com">Email Us</a></li>
+                        <li><a href="#contact">Get a Quote</a></li>
+                        <li><a href="#contact">Service Areas</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-copy">© 2025 Double A Power Wash LLC. All rights reserved. New Jersey.</div>
+                <div class="social-links">
+                    <a href="#" class="social-link" title="Facebook">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link" title="Instagram">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link" title="Google">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10" />
+                            <line x1="2" y1="12" x2="22" y2="12" />
+                            <path
+                                d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Scroll reveal animation
+        function revealOnScroll() {
+            const reveals = document.querySelectorAll('.scroll-reveal');
+
+            reveals.forEach(element => {
+                const elementTop = element.getBoundingClientRect().top;
+                const elementVisible = 150;
+
+                if (elementTop < window.innerHeight - elementVisible) {
+                    element.classList.add('revealed');
+                }
+            });
+        }
+
+        // Navbar scroll effect
+        function handleNavbarScroll() {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 100) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        }
+
+        // Initialize
+        window.addEventListener('scroll', () => {
+            revealOnScroll();
+            handleNavbarScroll();
+        });
+
+        // Trigger on load
+        window.addEventListener('load', revealOnScroll);
+
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>
